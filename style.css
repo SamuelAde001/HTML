@@ -1,0 +1,239 @@
+/* default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #85b8cd;
+  font-family: "Anonymous Pro", monospace;
+  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #283b42;
+}
+
+h2 {
+  font-size: 60px;
+  text-shadow: 5px 5px 5px;
+  text-transform: uppercase;
+  color: #283b42;
+}
+section {
+  padding: 40px 20px;
+}
+
+/* header styles */
+header {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  color: #d1dddb;
+  height: 100vh;
+  position: relative;
+}
+.bgvideo {
+  position: absolute;
+  top: -200px;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.head-name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+.head-name img {
+  border-radius: 10px;
+  border: 10px solid #d1dddb86;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.head-name h1 {
+  font-size: 90px;
+  text-shadow: 5px 5px 5px;
+}
+.head-name p {
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.125);
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  margin: 20px;
+  border: 5px solid #000000;
+}
+.head-name a {
+  color: #d1dddb;
+  text-decoration: underline;
+}
+.head-name a:hover {
+  color: #283b42;
+}
+nav {
+  background-color: #d1dddb93;
+  width: 600px;
+  display: flex;
+  font-size: 30px;
+  border-radius: 5px;
+  justify-content: space-evenly;
+}
+nav a {
+  color: #283b42;
+  padding-left: 5px;
+  padding: auto;
+}
+nav a:hover {
+  background: #283b42;
+  color: #d1dddb;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About me section */
+.about {
+}
+.myimg {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 0;
+}
+.myimg img {
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: pop-up-down 4s ease-in-out infinite;
+}
+/* Define the animation keyframes of image*/
+@keyframes pop-up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+article {
+  background: #d1dddb;
+  padding: 20px;
+  width: 50%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+article p {
+  margin: 10px 0;
+  text-align: justify;
+  font-size: larger;
+}
+/* works section */
+.works-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.myworksimgs {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 80px;
+  margin: 20px 0;
+}
+.myworksimgs img {
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.myworksimgs img:hover {
+}
+.works {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+.works:hover {
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.myworksimgs h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* resume styles */
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resume .resumehead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resume .resumebody {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  gap: 50px;
+}
+.resumebody div {
+  background: #d1dddb72;
+  width: 40%;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+/* contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact {
+  background: #d1dddb72;
+  min-width: 500px;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  background-color: #283b42;
+  color: #d1dddb;
+  font-size: small;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  padding: 30px;
+}

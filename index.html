@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Begining of the header -->
     <header>
-      <marquee behavior="" direction="right"
-        ><span
-          ><b><i>Diligence Hardwork and Efficiency</i></b></span
-        ></marquee
-      >
-      <head>
+      <div class="head-name">
         <img src="images/Profileimg.jpg" alt="My profile image" />
         <h1>Samuel Adebayo</h1>
         <p>
           Hi, my name is Samuel Adebayo and this is my portfolio page, do
           <a href="#about">check me out</a>
         </p>
-      </head>
+      </div>
       <!-- Navigation links -->
+
       <nav>
         <a href="#">Home</a>
         <a href="#about">About</a>
@@ -29,23 +32,28 @@
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </nav>
+      <video class="bgvideo" autoplay muted loop>
+        <source src="images/bgvidd.mp4" type="video/mp4" />
+      </video>
     </header>
+
     <hr />
     <main>
       <!-- About me Section -->
-      <section>
+      <section class="about">
         <a name="about"></a>
-        <h2><u>About me</u></h2>
+        <h2>About me</h2>
+        <div class="myimg">
+          <img src="images/profileimg1.jpg" alt="" />
+          <img src="images/profimg2.jpg" alt="My image" />
+          <img src="images/profimg3.jpg" alt="My image" />
+        </div>
         <article>
-          <img src="images/img2.jpg" alt="My image" />
           <p>
-            Hello, I'm <strong>Samuel Adebayo</strong>, and I'm passionate
-            about<br />
-            creating stunning and user-friendly digital experiences. As a<br />
-            frontend web developer, I blend artistry with technical expertise
-            to<br />
-            craft visually appealing, interactive, and accessible websites
-            that<br />
+            Hello, I'm <strong>Samuel Adebayo</strong>, and I'm passionate about
+            creating stunning and user-friendly digital experiences. As a
+            frontend web developer, I blend artistry with technical expertise to
+            craft visually appealing, interactive, and accessible websites that
             leave a lasting impression.
           </p>
           <p>Here is how my voice sounds like &#128515;</p>
@@ -53,201 +61,172 @@
             <source src="Voice recording.m4a" type="audio/ogg" />
             Your browser does not support the audio element.
           </audio>
-
           <h3>My Journey:</h3>
           <p>
-            My journey into the world of web development began when I
-            realized<br />
-            the power of technology to connect people and ideas. It was this<br />
-            realization that fueled my desire to build a career in frontend<br />
-            development. I've dedicated myself to mastering the art of<br />
-            transforming design concepts into seamless, responsive web<br />
+            My journey into the world of web development began when I realized
+            the power of technology to connect people and ideas. It was this
+            realization that fueled my desire to build a career in frontend
+            development. I've dedicated myself to mastering the art of
+            transforming design concepts into seamless, responsive web
             interfaces.
           </p>
           <p>
-            I'm well-versed in the latest frontend technologies and tools,<br />
-            including HTML5, CSS3, JavaScript, and various modern frameworks
-            and<br />
-            libraries like React and Vue.js. I believe in the importance of<br />
-            responsive design, ensuring that every website I create is as<br />
+            I'm well-versed in the latest frontend technologies and tools,
+            including HTML5, CSS3, JavaScript, and various modern frameworks and
+            libraries like React and Vue.js. I believe in the importance of
+            responsive design, ensuring that every website I create is as
             beautiful on a mobile device as it is on a desktop.
           </p>
-
           <p>
-            One of my core principles is to put the user first. I understand<br />
-            that the success of a website hinges on its ability to engage,<br />
-            inform, and delight the end-user. I meticulously craft user<br />
-            interfaces that are intuitive, accessible, and aesthetically<br />
+            One of my core principles is to put the user first. I understand
+            that the success of a website hinges on its ability to engage,
+            inform, and delight the end-user. I meticulously craft user
+            interfaces that are intuitive, accessible, and aesthetically
             pleasing, ensuring a positive experience for all visitors.
           </p>
           <p>
-            In the ever-evolving realm of web development, staying current is<br />
-            key. I'm committed to ongoing learning and professional growth,<br />
-            which means I'm always eager to explore new tools, techniques,
-            and<br />
-            best practices. This keeps me at the forefront of the industry,<br />
+            In the ever-evolving realm of web development, staying current is
+            key. I'm committed to ongoing learning and professional growth,
+            which means I'm always eager to explore new tools, techniques, and
+            best practices. This keeps me at the forefront of the industry,
             delivering the latest and greatest to my clients.
           </p>
-
           <p>
-            Great websites are the result of effective teamwork. I relish<br />
-            collaborating with designers, backend developers, and project<br />
-            managers to turn ideas into reality. I'm an excellent
-            communicator,<br />
-            ensuring that the vision is consistently aligned with the final<br />
+            Great websites are the result of effective teamwork. I relish
+            collaborating with designers, backend developers, and project
+            managers to turn ideas into reality. I'm an excellent communicator,
+            ensuring that the vision is consistently aligned with the final
             product.
           </p>
-
           <p>
-            For me, web development is more than just a job; it's a passion.
-            I<br />
-            take pride in building digital landscapes that reflect a brand's<br />
-            identity, enhance user engagement, and create a memorable online<br />
-            presence. I love the moment when a project comes to life and the<br />
+            For me, web development is more than just a job; it's a passion. I
+            take pride in building digital landscapes that reflect a brand's
+            identity, enhance user engagement, and create a memorable online
+            presence. I love the moment when a project comes to life and the
             client's goals are achieved.
           </p>
-
           <p>
-            I'm always excited to take on new challenges and create engaging
-            web<br />
-            experiences. If you're looking for a frontend web developer who's<br />
-            dedicated to quality, user experience, and innovation, let's<br />
-            connect. I'm eager to hear about your project and explore how I
-            can<br />
+            I'm always excited to take on new challenges and create engaging web
+            experiences. If you're looking for a frontend web developer who's
+            dedicated to quality, user experience, and innovation, let's
+            connect. I'm eager to hear about your project and explore how I can
             help you achieve your digital goals.
           </p>
         </article>
       </section>
       <hr />
       <!-- My works section -->
-      <section>
+      <section class="works-section">
         <a name="work"></a>
-        <h2><u>My works</u></h2>
-        <table>
-          <tr>
-            <td>
-              <img src="images/works1.jpg" alt="work 1" />
-              <p><b>First work</b></p>
-            </td>
-            <td>
-              <img src="images/works2.png" alt="work 1" />
-              <p><b>Second work</b></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="images/works3.png" alt="work 1" />
-              <p><b>Third work</b></p>
-            </td>
-            <td>
-              <img src="images/works4.png" alt="work 1" />
-              <p><b>Fourth work</b></p>
-            </td>
-          </tr>
-        </table>
+        <h2>My works</h2>
+        <div class="myworksimgs">
+          <div class="works">
+            <img src="images/works1.jpg" alt="" />
+            <h3>Lyco site</h3>
+          </div>
+          <div class="works">
+            <img src="images/works2.png" alt="" />
+            <h3>E-bike</h3>
+          </div>
+          <div class="works">
+            <img src="images/works3.png" alt="" />
+            <h3>Romeo site</h3>
+          </div>
+          <div class="works">
+            <img src="images/works4.png" alt="" />
+            <h3>Meta</h3>
+          </div>
+        </div>
       </section>
       <hr />
       <!-- My resume section -->
-      <section>
+      <section class="resume">
         <a name="resume"></a>
-        <h2><u>My Resume</u></h2>
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <title>Frontend Developer Resume</title>
-          </head>
-          <body>
-            <h2>Samuel Adebayo</h2>
-            <div>
-              <p>Nyanya, Abuja, Nigeria</p>
-              <p>Email: repzysam@gmail.com</p>
-              <p>Phone: +234 90 1966 8900</p>
-              <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/in/samuel-adebayo-b250ba251/"
-                  >https://www.linkedin.com/Samuel</a
-                >
-              </p>
-            </div>
-
-            <div>
-              <h3>Work Experience</h3>
-              <p><strong>Frontend Developer</strong></p>
-              <p><em>Devtalk with FK</em></p>
-              <p><em>January 2018 - Present</em></p>
-              <ul>
-                <li>
-                  Developed and maintained user-friendly and responsive web
-                  applications for various clients.
-                </li>
-                <li>
-                  Collaborated closely with design teams to translate mockups
-                  and wireframes into functional and visually engaging websites.
-                </li>
-                <li>
-                  Implemented efficient and clean HTML, CSS, and JavaScript
-                  code, improving website performance and user interaction.
-                </li>
-                <li>
-                  Conducted regular website testing and debugging to identify
-                  and resolve issues, ensuring seamless user experiences.
-                </li>
-                <li>
-                  Assisted in the integration of APIs, social media widgets, and
-                  third-party plugins to enhance website functionality.
-                </li>
-                <li>
-                  Participated in regular code reviews and provided constructive
-                  feedback to optimize coding practices.
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3>Education</h3>
-              <p><strong>Secondary School Certificate</strong></p>
-              <p><em>Airforce Military school, Jos</em></p>
-              <p><em>Graduated: July 2016</em></p>
-            </div>
-
-            <div>
-              <h3>Skills</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Responsive Web Design</li>
-                <li>Version Control (Git)</li>
-                <li>Tailwind CSS</li>
-                <li>Sass</li>
-              </ul>
-            </div>
-          </body>
-        </html>
+        <div class="resumehead">
+          <h2>My Resume</h2>
+          <h3>Samuel Adebayo</h3>
+        </div>
+        <div class="resumebody">
+          <div>
+            <p>Nyanya, Abuja, Nigeria</p>
+            <p>Email: repzysam@gmail.com</p>
+            <p>Phone: +234 90 1966 8900</p>
+            <p>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/samuel-adebayo-b250ba251/"
+                >https://www.linkedin.com/Samuel</a
+              >
+            </p>
+          </div>
+          <div>
+            <h3>Work Experience</h3>
+            <p><strong>Frontend Developer</strong></p>
+            <p><em>Devtalk with FK</em></p>
+            <p><em>January 2018 - Present</em></p>
+            <ul>
+              <li>
+                Developed and maintained user-friendly and responsive web
+                applications for various clients.
+              </li>
+              <li>
+                Collaborated closely with design teams to translate mockups and
+                wireframes into functional and visually engaging websites.
+              </li>
+              <li>
+                Implemented efficient and clean HTML, CSS, and JavaScript code,
+                improving website performance and user interaction.
+              </li>
+              <li>
+                Conducted regular website testing and debugging to identify and
+                resolve issues, ensuring seamless user experiences.
+              </li>
+              <li>
+                Assisted in the integration of APIs, social media widgets, and
+                third-party plugins to enhance website functionality.
+              </li>
+              <li>
+                Participated in regular code reviews and provided constructive
+                feedback to optimize coding practices.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Education</h3>
+            <p><strong>Secondary School Certificate</strong></p>
+            <p><em>Airforce Military school, Jos</em></p>
+            <p><em>Graduated: July 2016</em></p>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Version Control (Git)</li>
+              <li>Tailwind CSS</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </div>
       </section>
       <hr />
       <!-- My contact section -->
-      <section>
+      <section class="contact-section">
         <a name="contact"></a>
-        <h2><u>Contact me</u></h2>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <br /><br />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <br /><br />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <br /><br />
-
-          <input type="submit" value="Submit" />
-        </form>
+        <div class="contact">
+          <h2>Contact me</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </section>
     </main>
-    <hr />
     <!-- Footer -->
     <footer>
       <p>repzysam@gmail.com</p>
